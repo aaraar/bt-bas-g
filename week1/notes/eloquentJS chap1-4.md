@@ -8,7 +8,7 @@ Javascript uses a fixed number of 64 bits for a single value.
 - Infinity and -Infinity are infinite numbers in JS and always will be (Infinity-1 is still Infinity)
 - NaN represents the result of a calculation that does not yield a meaningful result (0/0, Inifinirt - Infinity) NaN itself is actually a number
 
-*Strings*
+**Strings**
 - Strings are arrays of characters that represent text
 - Strings can escape certain characters to display them correctly. \ represents an escape so \" display as a " however \n makes a newline (normal characters have special escape functions)
 - Arithmetic is not possible on strings, however adding to a string adds it to the string and where a string contains a number, JS sometimes tries to convert it to a number in an arithmetic expression
