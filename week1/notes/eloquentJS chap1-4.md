@@ -83,6 +83,8 @@ function foo(parameter){//code};
 const foo = function bar(parameter){//code};  
 const foo = (parameter) => {//code};  
 
+Calling: foo(argument);  
+
 When Bindings defined outside of any function or block are in the global scope and are usable everywhere in the code.
 Bindings inside a block or function are local scoped and are only usable within that scope
 Locking variables behind functions of blocks is called closure  
@@ -93,6 +95,9 @@ The call stack is the order in wich Blocks are executed by the browser
 When a function recalls itself to do repeating tasks it's called recursion.
 Make sure there is always a way out of the recursion so that it does not overflow the stack (lel. stackoverflow, that's where you go when this happens :S)
 A recursive function may never have side effects if it wants to be truly "Functional Programming"
+
+Arrow functions are always anonymous and require less typing.
+() =>  
 
 
 **Chapter 4**
@@ -118,5 +123,29 @@ function max(...numbers) {
       return result;  
 }  
 
-The Math object has a lot of method that can do basic and advanced arithmetics.
+The Math object has a lot of method that can do basic and advanced arithmetics.  
+Saving data is possible with JSON, wich looks a lot like JS objects. This makes them easy to use in conjunction.
 
+**Chapter 5**
+-
+**Higher order functions**
+
+
+**Chapter 6**
+-
+*OOP vs Functional*
+
+**Prototype**  
+The prototype for how a type or object works. The Array prototype for example includes al standard methods
+
+**Classes**  
+Classes in JS are comparable to Objects
+
+**Iterators**  
+Iterators are functions that iterate through steps or data
+
+**Getters & Setters**  
+Getters & Setters are functions that either get a property or set a property
+
+**Inheritance**  
+Inheritance: check freecodecamp
