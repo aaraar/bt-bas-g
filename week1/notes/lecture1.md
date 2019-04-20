@@ -1,17 +1,15 @@
-*WEEK 1 backend inhoud*
--
+#WEEK 1 backend inhoud
 - Cursus inhoud
 - Communicatie
 - Gastspreker van vandaag
 
-**Cursus inhoud**
--
+## Cursus inhoud
 Elke les een into video
 Elke week een gastspreker
 - Zorg dat je voorbereid bent voor gastsprekers
 - Maakt wat notitites vooraf
 
-**Onderwijzers:**
+### Onderwijzers:
 - Danny (de Vries)
 - Arnoud
 - Joost Faber
@@ -28,22 +26,20 @@ Oplevering:
 *Team prototype*, 
 *Proces boek*
 
-**Communicatie**
--
+## Communicatie
 - Github
 - Slack
 - Moodle
 
-**Vragen**
+### Vragen
 - Probeer zelf
 - Stackoverflow
 - Medestudenten
 - Last resort: onderwijzer
 - Coaching sessie is vooral voor voortgang en leerdoelen geen technische vragen
 
-**Gast spreker Clever Frank | Merlijn**
--
-**How code is run**
+## Gast spreker Clever Frank | Merlijn
+### How code is run
 - Proces is een uitvoering van een instance van een rogramma
 - Thread zijn meerdere sub-processes in een volgorde
 - Javascript is single-threaded
