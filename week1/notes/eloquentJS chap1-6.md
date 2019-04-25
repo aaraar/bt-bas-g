@@ -22,7 +22,7 @@ Ternary operator(s) accept 3 values, although there is only 1 ternary operator, 
 - Logical operators also result in a Boolean value
 ### Empty Values
 Null and Undefined are empty values  
-Null is actually an empty variable and undefined is an undefined variable (never declared)  
+Null is actually an empty variable and undefined is an undefined variable (never declared). You can declare null to define to JS that is in fact an empty value where you want it to be empty
 Example from https://www.ajaymatharu.com/javascript-difference-between-undefined-and-null/ which makes a lot of sense
 ```javascript
 var test1 = null;  
@@ -139,7 +139,7 @@ function max(...numbers) {
 ```
 
 The Math object has a lot of method that can do basic and advanced arithmetics.  
-Saving data is possible with JSON, wich looks a lot like JS objects. This makes them easy to use in conjunction.
+Saving data is possible with JSON, which looks a lot like JS objects. This makes them easy to use in conjunction.
 ## Chapter 5
 ### Higher order functions
 
