@@ -1,7 +1,7 @@
 const min = (argOne, argTwo) => {
     outcome = argOne < argTwo ? argOne : argTwo;
     return outcome;
-}
+};
 
 console.log(min(6, 3));
 console.log(min(3, 6));

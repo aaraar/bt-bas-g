@@ -1,29 +1,37 @@
-const range = (num1, num2, step=1) => {
+const range = (num1, num2, step = 1) => {
     let outcome = [];
-    const delta = (num1 > num2) ? num1-num2 : num2-num1;
-    if (Math.sign(step)===1) {
+    const highestNum = (num1 > num2) ? num1 : num2;
+    const lowestNum = (num1 < num2) ? num1 : num2;
+    const delta = (highestNum === num1) ? num1 - num2 : num2 - num1; // Checkt welke getal hoger is
+
+    if (Math.sign(step) === 1) { // Als de step een positief getal is
         for (i = 0; i <= delta; i++) {
             if (i % step === 0) {
-                outcome.push(num1 + (i));
+                outcome.push(lowestNum + (i));
             }
         }
-    }
-    if (Math.sign(step)===-1) {
+    } else if (Math.sign(step) === -1) { // Als de step een negatief getal is
         for (i = 0; i <= delta; i++) {
-            console.log('hallo');
             if (i % step === 0) {
-                outcome.push(num1 - (i));
+                outcome.push(highestNum - (i));
             }
         }
+    } else if (Math.sign(step) === 0) { // Als de step 0 is
+        for (i = 0; i <= delta; i++) {
+            outcome.push(lowestNum + (i));
+        }
     }
-    return outcome
-}
+    return outcome;
+};
 
 const sum = (rangeArray) => {
-    let sum = 0;
-    for (i=0; i<=rangeArray.length-1; i++) {
-        sum += rangeArray[i];
-    }
-    return sum;
-}
-console.log(sum(range(1, 10, 2)));
+    const total = rangeArray.reduce((acc, cur) => acc + cur, 0);
+    return total;
+};
+
+console.log(sum(range(1, 10))); // Het werkt zonder step
+console.log(sum(range(10, 1))); // Oook als het andersom staat
+console.log(sum(range(1, 10, -1))); // Negatieve steps
+console.log(sum(range(10, 1, -1))); // Werken ook allebei de kanten op
+console.log(sum(range(10, 1, 0))); // Step van 0 idem dito
+console.log(sum(range(1, 10, 0))); // Beide kanten op
